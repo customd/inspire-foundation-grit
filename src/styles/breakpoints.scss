@@ -1,0 +1,94 @@
+/**
+ * Breakpoints Map
+ */
+
+$breakpoints: (
+	"small-up": 0,
+	"small-down": 40em,
+	"medium-up": 40.063em,
+	"bp--tablet": 948px,
+	"medium-down": 64em,
+	"large-up": 64.063em,
+	"large-down": 80em,
+	"xlarge-up": 80.063em,
+	"xlarge-down": 120em,
+	"xxlarge-up": 120.063em
+);
+
+// Have to set a default $tweakpoints even if stats aren't being used.
+$tweakpoints: ();
+
+// Breakpoints is the above default variables.
+// Tweakpoints refers to component specific parameters.
+
+/**
+ * Breakpoints Manager
+ * @type {[map]}
+ */
+
+@mixin respond-to($point, $max: null) {
+	@if map-has-key($tweakpoints, $point) {
+		@if $max == "max" {
+			@media (max-width: map-get($tweakpoints, $point)) {
+				@content;
+			}
+		} @else {
+			@media (min-width: map-get($tweakpoints, $point)) {
+				@content;
+			}
+		}
+	} @else if map-has-key($breakpoints, $point) {
+		@if $max == "max" {
+			@media (max-width: map-get($breakpoints, $point)) {
+				@content;
+			}
+		} @else {
+			@media (min-width: map-get($breakpoints, $point)) {
+				@content;
+			}
+		}
+	} @else {
+		@warn "Could not find `#{$breakpoint}` in both local ($tweakpoints) and global ($breakpoints) contexts. Media block omitted.";
+	}
+}
+
+/* Example Snippet
+
+    @include mq('medium') {
+        color: red;
+    }
+
+*/
+
+/*==========================*/
+
+/**
+ * Component wrapper
+ * @type {[map]}
+ */
+
+@mixin component($component-tweakpoints: ()) {
+	$tweakpoints: $component-tweakpoints !global;
+	@content;
+	$tweakpoints: () !global;
+}
+
+/* Example Snippet used in a CONFIG scss file (must be this)
+
+    $tweakpoints: (
+        'custom': 500px,
+        'medium': 1170px,
+    );
+
+*/
+
+/* Example Snippet used in a component scss file
+
+    @include component((
+      'custom': 500px,
+      'medium': 1170px,
+    )) {
+      // A lot of Sass rules here, but no `$tweakpoints: ();` at the end of file
+    }
+
+*/

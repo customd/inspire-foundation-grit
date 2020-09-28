@@ -1,0 +1,501 @@
+@import "typography";
+@import "breakpoints";
+
+$base: 8px;
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+.nav {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  &__logo {
+    margin-right: $base * 3;
+    padding-right: $base * 3;
+    border-right: 1px solid rgba(255, 255, 255, 0.7);
+  }
+  &__block {
+    display: inline-flex;
+    align-items: center;
+  }
+  &__subtext {
+    color: #fff;
+    @include font_1;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1px;
+    @include respond-to("medium-down") {
+      font-size: 22px;
+    }
+  }
+  &__logo {
+    width: 90px;
+    @include respond-to("medium-down") {
+      width: 150px;
+    }
+  }
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/hero-mobile.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  @include respond-to("medium-down") {
+    background-image: url("../images/grit-hero.jpg");
+  }
+  @include respond-to("medium-down") {
+    background-position: center;
+  }
+  &__image {
+    width: 150px;
+    @include respond-to("medium-down") {
+      width: 400px;
+    }
+  }
+  &__wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  &__content {
+    width: 100%;
+    @include respond-to("medium-down") {
+      width: 60%;
+      margin-left: $gutter * 6;
+    }
+  }
+}
+
+.col_wrap {
+  @include respond-to("medium-down") {
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    grid-gap: $base * 5;
+  }
+}
+
+.container {
+  max-width: 1240px;
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+}
+
+section {
+  padding-top: $gutter * 2;
+  padding-bottom: $gutter * 2;
+  @include respond-to("medium-down") {
+    padding-top: $gutter * 4;
+    padding-bottom: $gutter * 4;
+  }
+}
+
+.section {
+  &__title {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 400;
+    @include font_3;
+    position: relative;
+    margin-bottom: $base * 8;
+    @include respond-to("medium-down") {
+      font-size: 28px;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -24px;
+      left: 0;
+      width: 40px;
+      border-bottom: solid 6px red;
+      @include respond-to("medium-down") {
+        border-bottom: solid 8px red;
+        width: 70px;
+      }
+    }
+  }
+  &__block {
+    h4 {
+      @include font_1;
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: red;
+      margin-bottom: $base * 2;
+      margin-top: $base * 4;
+    }
+  }
+  &__header {
+    @include font_2;
+    font-size: 36px;
+    line-height: 1.25;
+    margin-bottom: $base * 4;
+    @include respond-to("medium-down") {
+      font-size: 62px;
+      line-height: 1.1;
+    }
+  }
+  &__copy {
+    @include font_3;
+    font-weight: 300;
+    font-size: 18px;
+    p {
+      line-height: 1.7;
+    }
+  }
+}
+
+.interactive {
+  margin-top: $base * 4;
+  display: none;
+  @include respond-to("medium-down") {
+    display: block;
+  }
+  &__hover {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s ease all;
+    position: absolute;
+    text-transform: initial;
+    font-size: 18px;
+    font-weight: 300;
+    max-width: 350px;
+    margin-top: $base * 3;
+    line-height: 24px;
+  }
+  &__line {
+    width: 100%;
+    height: 2px;
+    background: red;
+  }
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: #fff;
+    margin-top: $base * 2;
+  }
+  &__heading {
+    cursor: pointer;
+    span {
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        top: -26px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 20px;
+        height: 20px;
+        background: red;
+        border-radius: 50px;
+        transition: 0.2s ease all;
+      }
+    }
+    &:hover {
+      .interactive__hover {
+        visibility: visible;
+        opacity: 1;
+        transition: 0.2s ease all;
+      }
+      span {
+        &:before {
+          background: #fff;
+          transition: 0.2s ease all;
+        }
+      }
+    }
+  }
+  &__block {
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    @include respond-to("medium-down") {
+      font-size: 22px;
+    }
+  }
+}
+
+.why-grit {
+  &__graph {
+    p {
+      text-align: center;
+      font-weight: 600;
+      font-size: 20px;
+    }
+  }
+  .button_block {
+    max-width: 350px;
+    margin-top: $base * 6;
+    margin-bottom: $base * 5;
+  }
+  .button_wrap {
+    max-width: 350px;
+    width: 100%;
+    display: none;
+    @include respond-to("medium-down") {
+      display: block;
+      margin: $base * 6 auto;
+    }
+  }
+  .button_wrap_mobile {
+    display: block;
+    margin-top: $base * 4;
+    @include respond-to("medium-down") {
+      display: none;
+    }
+  }
+  &__sidebar {
+    display: none;
+    @include respond-to("medium-down") {
+      display: block;
+    }
+  }
+}
+
+button {
+  background: none;
+  border-top: solid 3px red;
+  border-bottom: solid 3px red;
+  border-left: 0;
+  border-right: 0;
+  box-shadow: none;
+  outline: none;
+  font-weight: 800;
+  font-size: 16px;
+  @include font_3;
+  color: #3f3f3f;
+  letter-spacing: 2.5px;
+  padding: $base * 3 $gutter * 4;
+  width: 100%;
+  @include respond-to("medium-down") {
+    font-size: 22px;
+  }
+  span {
+    @include font_4;
+    font-weight: 300;
+    font-style: italic;
+  }
+}
+
+.dark_bg {
+  background: #000;
+  color: #fff;
+  &__header {
+    @include font_2;
+    color: #fff;
+  }
+  &__copy {
+    p {
+      color: #fff;
+    }
+  }
+}
+
+.white_bg {
+  background: #fff;
+  color: #3f3f3f;
+  &__header {
+    @include font_2;
+    color: #3f3f3f;
+  }
+  &__copy {
+    p {
+      color: #3f3f3f;
+    }
+  }
+}
+
+.interactive-mobile {
+  margin-top: $base * 6;
+  color: #fff;
+  @include respond-to("medium-down") {
+    display: none;
+  }
+  &__block {
+    margin-bottom: $base * 3;
+    transition: 0.2s ease all;
+    height: 50px;
+    &:hover {
+      height: auto;
+      transition: 0.2s ease all;
+      .interactive-mobile__hover {
+        visibility: visible;
+        opacity: 1;
+        transition: 0.2s ease all;
+      }
+    }
+  }
+  &__bullet {
+    width: 15px;
+    height: 15px;
+    background: red;
+    display: inline-block;
+    border-radius: 50px;
+    margin-right: $base * 2;
+  }
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  &__hover {
+    text-transform: unset;
+    transition: 0.2s ease all;
+    visibility: hidden;
+    opacity: 0;
+    margin-left: $base * 4;
+    margin-top: $base * 2;
+    line-height: 1.4;
+  }
+}
+
+.mission {
+  background-image: url("../images/jake-bailey-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  &__logo {
+    max-width: 100px;
+    width: 100%;
+    margin-bottom: $base * 5;
+    @include respond-to("medium-down") {
+      max-width: 350px;
+      margin: auto;
+    }
+  }
+}
+
+.insights {
+  &__logo_wrap {
+    @include respond-to("medium-down") {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__header {
+    margin-bottom: $base * 5;
+    display: flex;
+    @include respond-to("medium-down") {
+      // display: block;
+    }
+  }
+  &__logo_wrap {
+    margin-bottom: $base * 4;
+  }
+  &__play {
+    width: 100px;
+    justify-self: flex-end;
+    opacity: 0.25;
+  }
+  &__logo {
+    @include respond-to("medium-down") {
+      width: 350px;
+      display: flex;
+    }
+    span {
+      @include font_1;
+      white-space: nowrap;
+      color: red;
+      font-size: 24px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding-left: $base * 3;
+      margin-left: $base * 3;
+      border-left: 3px solid red;
+      position: relative;
+      @include respond-to("medium-down") {
+        font-size: 32px;
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-left: 3px solid red;
+      }
+    }
+  }
+  &__grit {
+    width: 100px;
+    @include respond-to("medium-down") {
+      width: 220px;
+    }
+  }
+}
+
+.resources {
+  padding-top: $base * 6;
+  padding-bottom: $base * 6;
+  @include respond-to("medium-down") {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: $base * 4;
+  }
+  &__blurb {
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: $base * 2;
+  }
+  &__placeholder {
+    position: relative;
+  }
+  &__name {
+    font-weight: 600;
+    font-size: 16px;
+    color: red;
+    margin-top: $base * 3;
+  }
+}
+
+.play {
+  width: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.quick-links {
+  &__wrap {
+    @include respond-to("medium-down") {
+      display: grid;
+      grid-gap: $gutter;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    a {
+      display: block;
+    }
+  }
+  &__item {
+    font-size: 18px;
+    text-decoration: underline;
+    color: #fff;
+    margin-bottom: $gutter;
+  }
+}
+
+.mentorship {
+  background-image: url("../images/coffee-shop-hero_shade.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

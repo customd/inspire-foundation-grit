@@ -1,0 +1,204 @@
+// -------------------------------------------------------------
+//
+//	TYPOGRAPHY
+//
+//	------------------------------------------------------------
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+$gutter: 12px;
+
+// ----- Mixins ----- //
+// For including various font stacks
+
+@mixin font_1 {
+  font-family: "Roboto Condensed", Helvetica, Arial, Verdana, Sans-Serif;
+}
+
+@mixin font_2 {
+  font-family: lust-didone, Georgia, "Times New Roman", Times, Serif;
+}
+
+@mixin font_3 {
+  font-family: "Franklin Gothic", Helvetica, Arial, Verdana, Sans-Serif;
+}
+
+@mixin font_4 {
+  font-family: Georgia, "Times New Roman", Times, Serif;
+}
+
+$line-height: rem-calc(25);
+
+html,
+body {
+  @include font_3;
+  line-height: $line-height;
+  color: #3f3f3f;
+}
+
+// ----- Headings ----- //
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include font_2;
+  font-weight: normal;
+  line-height: 1.2em;
+  text-rendering: optimizeLegibility;
+  a {
+    color: inherit;
+    border: 0;
+    &:hover {
+      border-bottom: 1px solid #000;
+      color: inherit;
+    }
+  }
+}
+
+h1,
+.h1 {
+  font-size: rem-calc(42);
+}
+
+h2,
+.h2 {
+  font-size: rem-calc(36);
+}
+
+h3,
+.h3 {
+  font-size: rem-calc(30);
+}
+
+h4,
+.h4 {
+  font-size: rem-calc(24);
+}
+
+h5,
+.h5 {
+  font-size: rem-calc(18);
+}
+
+h6,
+.h6 {
+  font-size: rem-calc(16);
+}
+
+/* Lists */
+ul,
+ol {
+  padding-left: 1.2em;
+  list-style-type: none;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: $gutter * 1.5;
+  line-height: 1.35;
+  @include font_3;
+
+  //add margin around video resource links
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  &.double-spacing {
+    line-height: 2;
+  }
+}
+
+div {
+  &.double-spacing {
+    line-height: 2;
+  }
+}
+
+ul.bullets {
+  li {
+    position: relative;
+    &:before {
+      position: absolute;
+      content: "";
+      width: 0.25em;
+      height: 0.25em;
+      left: -1.2em;
+      top: 0.5em;
+    }
+  }
+}
+
+.reversed {
+  color: #fff !important;
+}
+
+.uline {
+  border-bottom: 1px solid #dedede;
+  padding-bottom: 0.25em;
+}
+
+/* Alignment */
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* Additional base styles */
+
+.caps {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+a {
+  text-decoration: none;
+  &:hover,
+  &:focus {
+  }
+}
+
+p a,
+article a {
+  color: #000;
+}
+
+blockquote,
+.blockquote {
+  font-style: italic;
+  padding-left: 1.5em;
+}
+
+// Icons
+
+.ss-standard-alignment {
+  position: relative;
+  top: 2px;
+  margin-right: $gutter * 0.5;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.fs-10 {
+  font-size: rem-calc(10);
+}
+.fs-12 {
+  font-size: rem-calc(12);
+}
+.fs-14 {
+  font-size: rem-calc(14);
+}
+.fs-16 {
+  font-size: rem-calc(16);
+}
+.fs-18 {
+  font-size: rem-calc(18);
+}
