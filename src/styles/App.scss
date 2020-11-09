@@ -1,7 +1,9 @@
 @import "typography";
 @import "breakpoints";
+@import url("https://use.typekit.net/tzv0zjz.css");
 
 $base: 8px;
+$red: #de0000;
 
 body {
   margin: 0;
@@ -21,11 +23,31 @@ img {
   position: absolute;
   top: 0;
   left: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
   &__logo {
     margin-right: $base * 3;
     padding-right: $base * 3;
-    border-right: 1px solid rgba(255, 255, 255, 0.7);
+    width: 90px;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 50px;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      border-right: 1px solid rgba(255, 255, 255, 0.7);
+    }
+    @include respond-to("medium-down") {
+      width: 160px;
+    }
   }
   &__block {
     display: inline-flex;
@@ -34,17 +56,79 @@ img {
   &__subtext {
     color: #fff;
     @include font_1;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 16px;
     letter-spacing: 1px;
     @include respond-to("medium-down") {
-      font-size: 22px;
+      font-size: 20px;
+    }
+  }
+}
+
+.nav-container {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  opacity: 0;
+  transition: 0.2s ease all;
+  &.show {
+    z-index: 9999;
+    opacity: 1;
+    //visibility: visible;
+    transition: 0.2s ease all;
+  }
+}
+
+.main-nav {
+  width: 100%;
+  height: 80px;
+  -webkit-box-shadow: -1px 9px 12px -9px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: -1px 9px 12px -9px rgba(0, 0, 0, 0.2);
+  box-shadow: -1px 9px 12px -9px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  justify-content: center;
+  z-index: 800;
+  &__wrap {
+    width: 100%;
+    height: 80px;
+    max-width: 1400px;
+
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    svg {
+      cursor: pointer;
     }
   }
   &__logo {
+    margin-right: $base * 3;
+    padding-right: $base * 3;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
     width: 90px;
     @include respond-to("medium-down") {
-      width: 150px;
+      width: 130px;
+    }
+  }
+  &__block {
+    display: inline-flex;
+    align-items: center;
+  }
+  &__subtext {
+    color: #3f3f3f;
+    @include font_1;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    @include respond-to("medium-down") {
+      font-size: 18px;
     }
   }
 }
@@ -123,9 +207,9 @@ section {
       bottom: -24px;
       left: 0;
       width: 40px;
-      border-bottom: solid 6px red;
+      border-bottom: solid 6px $red;
       @include respond-to("medium-down") {
-        border-bottom: solid 8px red;
+        border-bottom: solid 8px $red;
         width: 70px;
       }
     }
@@ -136,7 +220,7 @@ section {
       font-size: 32px;
       font-weight: 700;
       letter-spacing: 2px;
-      color: red;
+      color: $red;
       margin-bottom: $base * 2;
       margin-top: $base * 4;
     }
@@ -147,8 +231,8 @@ section {
     line-height: 1.25;
     margin-bottom: $base * 4;
     @include respond-to("medium-down") {
-      font-size: 62px;
-      line-height: 1.1;
+      font-size: 54px;
+      line-height: 1.15;
     }
   }
   &__copy {
@@ -159,6 +243,18 @@ section {
       line-height: 1.7;
     }
   }
+}
+.iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.iframe-wrap {
+  // padding: 56.25% 0 0 0;
+  position: relative;
 }
 
 .interactive {
@@ -182,13 +278,13 @@ section {
   &__line {
     width: 100%;
     height: 2px;
-    background: red;
+    background: $red;
   }
   &__content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     color: #fff;
-    margin-top: $base * 2;
+    margin-top: $base * 3;
   }
   &__heading {
     cursor: pointer;
@@ -197,12 +293,12 @@ section {
       &:before {
         content: "";
         position: absolute;
-        top: -26px;
+        top: -34px;
         left: 50%;
         transform: translateX(-50%);
         width: 20px;
         height: 20px;
-        background: red;
+        background: $red;
         border-radius: 50px;
         transition: 0.2s ease all;
       }
@@ -241,9 +337,8 @@ section {
     }
   }
   .button_block {
-    max-width: 350px;
-    margin-top: $base * 6;
-    margin-bottom: $base * 5;
+    max-width: 300px;
+    margin: $base * 6 auto;
   }
   .button_wrap {
     max-width: 350px;
@@ -269,28 +364,60 @@ section {
   }
 }
 
-button {
-  background: none;
-  border-top: solid 3px red;
-  border-bottom: solid 3px red;
-  border-left: 0;
-  border-right: 0;
-  box-shadow: none;
-  outline: none;
-  font-weight: 800;
-  font-size: 16px;
-  @include font_3;
-  color: #3f3f3f;
-  letter-spacing: 2.5px;
-  padding: $base * 3 $gutter * 4;
-  width: 100%;
-  @include respond-to("medium-down") {
-    font-size: 22px;
+.small_button_block {
+  max-width: 75%;
+  margin: auto;
+  button {
+    background: none;
+    border-top: solid 3px $red;
+    border-bottom: solid 3px $red;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+    outline: none;
+    font-weight: 800;
+    font-size: 16px;
+    @include font_3;
+    color: #3f3f3f;
+    letter-spacing: 2px;
+    padding: $base * 2 0;
+    margin-top: $base * 4;
+    width: 100%;
+    @include respond-to("medium-down") {
+      font-size: 16px;
+    }
+    span {
+      @include font_4;
+      font-weight: 300;
+      font-style: italic;
+    }
   }
-  span {
-    @include font_4;
-    font-weight: 300;
-    font-style: italic;
+}
+
+.button_block {
+  button {
+    background: none;
+    border-top: solid 3px $red;
+    border-bottom: solid 3px $red;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+    outline: none;
+    font-weight: 800;
+    font-size: 16px;
+    @include font_3;
+    color: #3f3f3f;
+    letter-spacing: 2.5px;
+    padding: $base * 3 $gutter * 4;
+    width: 100%;
+    @include respond-to("medium-down") {
+      font-size: 18px;
+    }
+    span {
+      @include font_4;
+      font-weight: 300;
+      font-style: italic;
+    }
   }
 }
 
@@ -345,7 +472,7 @@ button {
   &__bullet {
     width: 15px;
     height: 15px;
-    background: red;
+    background: $red;
     display: inline-block;
     border-radius: 50px;
     margin-right: $base * 2;
@@ -366,6 +493,61 @@ button {
   }
 }
 
+.nav-modal {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+  transition: ease 0.2s all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__wrap {
+    max-width: 1400px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+}
+
+.nav-close {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+  height: 100px;
+  max-width: 1400px;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+.nav-content {
+  max-width: 1400px;
+  margin: auto;
+  li,
+  a {
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: $base * 7;
+    transition: ease 0.2s all;
+    cursor: pointer;
+    &:hover {
+      color: $red;
+      transition: ease 0.2s all;
+    }
+  }
+  ul {
+    text-align: center;
+  }
+}
+
 .mission {
   background-image: url("../images/jake-bailey-bg.jpg");
   background-size: cover;
@@ -383,6 +565,130 @@ button {
   }
 }
 
+section.article {
+  // padding-top: $base * 3;
+}
+
+.article {
+  padding-top: 110px;
+  margin-bottom: $base * 4;
+  z-index: 0;
+  min-height: calc(100vh - 100px);
+  &__wrap {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    grid-gap: $base * 4;
+  }
+  &__sidebar {
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+    padding-left: $base * 3;
+  }
+  &__title {
+    font-family: lust-didone, Georgia, "Times New Roman", Times, Serif;
+    font-size: 32px;
+    margin-top: $base * 2;
+  }
+  &__name {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  &__block {
+    margin-top: $base * 2;
+    // border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  &__share {
+    display: flex;
+    button {
+      width: 40px;
+      margin-left: $base;
+    }
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__description {
+    margin-top: $base * 3;
+    padding-top: $base * 3;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    line-height: 22px;
+  }
+  &__tags {
+    margin-left: $base * 6;
+
+    span {
+      width: 100px;
+      height: 20px;
+      background: #e9eff3;
+      color: #0695e5;
+      font-weight: 600;
+      margin: 0 $base/2;
+      padding: 6px 16px;
+      border-radius: 50px;
+      font-size: 13px;
+      text-transform: uppercase;
+      &:first-child {
+        background: transparent;
+        color: #3f3f3f;
+        font-weight: 600;
+        padding: 0;
+      }
+    }
+  }
+}
+
+.sidebar {
+  overflow-y: scroll;
+  &__wrap {
+    height: 660px;
+    // overflow: hidden;
+  }
+  &__header {
+    font-weight: 800;
+    font-size: 18px;
+    margin-bottom: $base * 2;
+  }
+  &__row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: $base * 2;
+    grid-gap: $gutter;
+    cursor: pointer;
+    transition: 0.2s all ease;
+    &:hover {
+      background: #eee;
+      transition: 0.2s all ease;
+      color: $red;
+    }
+  }
+  &__title {
+    font-weight: 600;
+    line-height: 20px;
+  }
+  &__image {
+    position: relative;
+    height: 75px;
+    svg {
+      z-index: 100;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0.9;
+    }
+    img {
+      width: 100%;
+      height: 80px;
+    }
+  }
+  &__name {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: $base;
+  }
+}
+
 .insights {
   &__logo_wrap {
     @include respond-to("medium-down") {
@@ -391,15 +697,24 @@ button {
       align-items: center;
     }
   }
+  svg {
+    margin-right: 16px;
+    margin-top: -9px;
+  }
+  .section__title {
+    margin-bottom: 0;
+  }
   &__header {
     margin-bottom: $base * 5;
     display: flex;
     @include respond-to("medium-down") {
-      // display: block;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
     }
   }
-  &__logo_wrap {
-    margin-bottom: $base * 4;
+  &__subheader {
+    display: flex;
+    align-items: flex-start;
   }
   &__play {
     width: 100px;
@@ -408,19 +723,19 @@ button {
   }
   &__logo {
     @include respond-to("medium-down") {
-      width: 350px;
+      width: 250px;
       display: flex;
     }
     span {
       @include font_1;
       white-space: nowrap;
-      color: red;
+      color: $red;
       font-size: 24px;
       letter-spacing: 2px;
       text-transform: uppercase;
       padding-left: $base * 3;
       margin-left: $base * 3;
-      border-left: 3px solid red;
+      border-left: 3px solid $red;
       position: relative;
       @include respond-to("medium-down") {
         font-size: 32px;
@@ -430,7 +745,7 @@ button {
         position: absolute;
         top: 0;
         left: 0;
-        border-left: 3px solid red;
+        border-left: 3px solid $red;
       }
     }
   }
@@ -454,15 +769,37 @@ button {
     font-weight: 600;
     font-size: 18px;
     margin-top: $base * 2;
+    color: #3f3f3f;
+  }
+  &__tile {
+    transition: ease 0.2s all;
+    cursor: pointer;
+    &:hover {
+      .resources__placeholder {
+        filter: brightness(1.2);
+        transition: ease 0.2s all;
+      }
+      .resources__blurb,
+      .resources__name {
+        transition: ease 0.2s all;
+        color: $red;
+      }
+    }
   }
   &__placeholder {
     position: relative;
   }
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
   &__name {
-    font-weight: 600;
+    font-weight: 400;
     font-size: 16px;
-    color: red;
-    margin-top: $base * 3;
+    color: #3f3f3f;
+    margin-top: $base * 2;
   }
 }
 
@@ -494,8 +831,16 @@ button {
 }
 
 .mentorship {
-  background-image: url("../images/coffee-shop-hero_shade.jpg");
+  background-image: url("../images/mentorship.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  background: #000;
+  color: #999;
+  font-size: 14px;
 }

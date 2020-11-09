@@ -3,14 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@n8tb1t/use-scroll-position": "^1.0.47",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "framer-motion": "^2.7.8",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^16.13.1",
+    "react-fade-in": "^1.1.1",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^3.11.0",
+    "react-iframe": "^1.8.0",
     "react-modal-video": "^1.2.6",
-    "react-scripts": "3.4.3"
+    "react-responsive-embed": "^2.1.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.3",
+    "react-share": "^4.3.0",
+    "react-waypoint": "^9.0.3"
   },
   "scripts": {
     "start": "react-scripts start",

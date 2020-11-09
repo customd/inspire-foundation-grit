@@ -3,6 +3,7 @@
 //	TYPOGRAPHY
 //
 //	------------------------------------------------------------
+@import url("https://use.typekit.net/tzv0zjz.css");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
@@ -17,7 +18,9 @@ $gutter: 12px;
 }
 
 @mixin font_2 {
-  font-family: lust-didone, Georgia, "Times New Roman", Times, Serif;
+  font-family: lust, serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 @mixin font_3 {
@@ -53,7 +56,7 @@ h6 {
     color: inherit;
     border: 0;
     &:hover {
-      border-bottom: 1px solid #000;
+      border-bottom: 1px solid #282828;
       color: inherit;
     }
   }
@@ -158,6 +161,7 @@ ul.bullets {
 }
 
 a {
+  color: #3f3f3f;
   text-decoration: none;
   &:hover,
   &:focus {
@@ -166,7 +170,7 @@ a {
 
 p a,
 article a {
-  color: #000;
+  color: #282828;
 }
 
 blockquote,
