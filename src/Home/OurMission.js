@@ -6,7 +6,7 @@ const OurMission = () => {
       <div className="container col_wrap mission__wrap">
         <div className="mission__sidebar">
           <div className="mission__logo">
-            <img src="images/grit-logo-white.png" />
+            <img alt="GRIT logo" src="images/grit-logo-white.png" />
           </div>
         </div>
         <div>

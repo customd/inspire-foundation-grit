@@ -1,5 +1,4 @@
 import React from "react";
-import { Waypoint } from "react-waypoint";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./Home/index";
 import Article from "./Insights/Article";

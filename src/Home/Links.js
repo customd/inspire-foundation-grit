@@ -6,28 +6,28 @@ const Links = () => {
       <div className="container mission__wrap">
         <div className="section__title">Helpful Links</div>
         <div className="quick-links__wrap">
-          <a href="#" className="quick-links__item">
+          <a href="https://www.google.com/" className="quick-links__item">
             This is a link
           </a>
-          <a href="#" className="quick-links__item">
+          <a href="https://www.google.com/" className="quick-links__item">
             This is a link
           </a>
-          <a href="#" className="quick-links__item">
+          <a href="https://www.google.com/" className="quick-links__item">
             This is a link
           </a>
-          <a href="#" className="quick-links__item">
+          <a href="https://www.google.com/" className="quick-links__item">
             This is a link
           </a>
-          <a href="#" className="quick-links__item">
+          <a href="https://www.google.com/" className="quick-links__item">
             This is a link
           </a>
-          <a href="#" className="quick-links__item">
+          <a href="https://www.google.com/" className="quick-links__item">
             This is a link
           </a>
-          <a href="#" className="quick-links__item">
+          <a href="https://www.google.com/" className="quick-links__item">
             This is a link
           </a>
-          <a href="#" className="quick-links__item">
+          <a href="https://www.google.com/" className="quick-links__item">
             This is a link
           </a>
         </div>

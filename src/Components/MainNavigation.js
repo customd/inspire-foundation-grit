@@ -12,7 +12,7 @@ const MainNavigation = () => {
           <Link to={"/"}>
             <div className="main-nav__block">
               <div className="main-nav__logo">
-                <img src="../images/grit-logo.svg" />
+                <img alt="GRIT logo" src="../images/grit-logo.svg" />
               </div>
               <div className="main-nav__subtext">
                 Finding <span>a better</span> you.

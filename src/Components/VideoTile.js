@@ -6,7 +6,7 @@ const VideoTile = ({ title, name, image }) => {
     <div className="resources__tile">
       <div className="resources__placeholder">
         <FaPlay size={32} color="#fff" />
-        <img src={`../images/stills/${image}.jpg`} />
+        <img alt={name} src={`../images/stills/${image}.jpg`} />
       </div>
       <div className="resources__blurb">{title}</div>
       <div className="resources__name">{name}</div>

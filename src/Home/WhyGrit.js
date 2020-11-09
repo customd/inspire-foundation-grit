@@ -7,7 +7,7 @@ const WhyGrit = () => {
       <div className="container col_wrap why-grit__wrap">
         <div className="why-grit__sidebar">
           <div className="why-grit__graph">
-            <img src="images/success-chart.png" />
+            <img alt="Success Chart" src="images/success-chart.png" />
             <p>The success chart reality</p>
           </div>
           <PrimaryButton />

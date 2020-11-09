@@ -11,7 +11,7 @@ const Insights = () => {
         <div className="insights__header">
           <div className="insights__logo_wrap">
             <div className="insights__logo">
-              <img src="../images/insights-logo.png" />
+              <img alt="Insights Logo" src="../images/insights-logo.png" />
               <div className="insights__">
                 <span>The Series</span>
               </div>

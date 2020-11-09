@@ -19,7 +19,6 @@ import VideoData from "../VideoData";
 
 const Article = (state) => {
   const data = state.location.state;
-  const url = new URL(process.env.PUBLIC_URL, window.location.href);
   return (
     <div>
       <FadeIn>

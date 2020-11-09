@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="container hero__wrap">
         <div className="hero__content">
           <div className="hero__image">
-            <img src="../images/grit-logo-white.png" />
+            <img alt="GRIT logo" src="../images/grit-logo-white.png" />
           </div>
           <InteractiveMobile />
           <InteractiveDesktop />

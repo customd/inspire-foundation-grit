@@ -9,7 +9,7 @@ const Navigation = () => {
       <div className="nav">
         <div className="nav__block">
           <div className="nav__logo">
-            <img src="../images/grit-logo-white.png" />
+            <img alt="logo" src="../images/grit-logo-white.png" />
           </div>
           <div className="nav__subtext">
             Finding <span>a better</span> you.
