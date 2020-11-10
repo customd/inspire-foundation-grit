@@ -587,7 +587,8 @@ section.article {
   &__title {
     font-family: lust-didone, Georgia, "Times New Roman", Times, Serif;
     font-size: 32px;
-    margin-top: $base * 2;
+    margin-top: $base * 3;
+    margin-bottom: $gutter;
   }
   &__name {
     font-weight: 600;
