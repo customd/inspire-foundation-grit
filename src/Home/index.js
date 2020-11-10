@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
-import FadeIn from "react-fade-in";
 import Hero from "./Hero";
 import Navigation from "../Components/Navigation";
 import MainNavigation from "../Components/MainNavigation";
@@ -22,21 +21,19 @@ const Home = () => {
     [hideOnScroll]
   );
   return (
-    <div>
-      <FadeIn>
-        <div className={`nav-container ${hideOnScroll ? "hide" : "show"}`}>
-          <MainNavigation />
-        </div>
-        <Navigation />
-        <Hero />
-        <WhyGrit />
-        <OurMission />
-        <Insights />
-        <Links />
-        <Mentorship />
-        <Footer />
-      </FadeIn>
-    </div>
+    <>
+      <div className={`nav-container ${hideOnScroll ? "hide" : "show"}`}>
+        <MainNavigation />
+      </div>
+      <Navigation />
+      <Hero />
+      <WhyGrit />
+      <OurMission />
+      <Insights />
+      <Links />
+      <Mentorship />
+      <Footer />
+    </>
   );
 };
 
