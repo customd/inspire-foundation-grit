@@ -35,7 +35,7 @@ const Article = (state) => {
             <div className="article__content">
               <div className="">
                 <ResponsiveEmbed
-                  src="https://player.vimeo.com/video/301799448?color=ffffff&byline=0&portrait=0"
+                  src="https://player.vimeo.com/video/100902001?color=ffffff&byline=0&portrait=0"
                   allowFullScreen
                 />
               </div>
@@ -46,8 +46,8 @@ const Article = (state) => {
                     <div className="article__name">{data.name}</div>
                     <div className="article__tags">
                       <span>Tags:</span>
-                      <span>Health</span>
-                      <span>Cycling</span>
+                      <span>Tag One</span>
+                      <span>Tag Two</span>
                       <span>Tag Three</span>
                     </div>
                   </div>
@@ -105,7 +105,7 @@ const Article = (state) => {
                     </div>
                   </Link>
                 ))}
-                <SmallButton />
+                {/* <SmallButton /> */}
               </div>
             </div>
           </div>

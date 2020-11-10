@@ -1,9 +1,9 @@
 const VideoData = [
   {
-    name: "Jake Bailey",
-    url: "jake-bailey",
-    title: "Facing adversity and not sweating the small stuff",
-    image: "jake-bailey",
+    name: "Tom Walsh",
+    url: "tom-walsh",
+    title: "Chasing the perfect throw",
+    image: "tom-walsh",
   },
   {
     name: "Rosa Flanagan",
@@ -12,10 +12,10 @@ const VideoData = [
     image: "rosa-flanagan",
   },
   {
-    name: "Tom Walsh",
-    url: "tom-walsh",
-    title: "Chasing the perfect throw",
-    image: "tom-walsh",
+    name: "Tim Bateman",
+    url: "tim-bateman",
+    title: "Developing mental performance",
+    image: "tim-bateman",
   },
   {
     name: "Anna Simcic",
@@ -24,10 +24,10 @@ const VideoData = [
     image: "anna-simcic",
   },
   {
-    name: "Tim Bateman",
-    url: "tim-bateman",
-    title: "Developing mental performance",
-    image: "tim-bateman",
+    name: "Jake Bailey",
+    url: "jake-bailey",
+    title: "Facing adversity and not sweating the small stuff",
+    image: "jake-bailey",
   },
   {
     name: "Megan Shea",
@@ -36,10 +36,10 @@ const VideoData = [
     image: "megan-shea",
   },
   {
-    name: "Anton Cooper",
-    url: "anton-cooper",
-    title: "Managing disappointment in competitive sport",
-    image: "anton-cooper",
+    name: "John Quinn",
+    url: "john-quinn",
+    title: "Implementing sustainable behaviour change",
+    image: "john-quinn",
   },
   {
     name: "Eve Macfarlane",
@@ -48,10 +48,10 @@ const VideoData = [
     image: "eve-macfarlane",
   },
   {
-    name: "John Quinn",
-    url: "john-quinn",
-    title: "Implementing sustainable behaviour change",
-    image: "john-quinn",
+    name: "Anton Cooper",
+    url: "anton-cooper",
+    title: "Managing disappointment in competitive sport",
+    image: "anton-cooper",
   },
 ];
 
