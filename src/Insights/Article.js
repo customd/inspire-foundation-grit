@@ -14,7 +14,6 @@ import {
 import { FaPlay } from "react-icons/fa";
 import MainNavigation from "../Components/MainNavigation";
 import Footer from "../Components/Footer";
-import { SmallButton } from "../Components/Buttons";
 import VideoData from "../VideoData";
 
 const Article = (state) => {
