@@ -30,6 +30,7 @@ img {
   justify-content: space-between;
   align-items: center;
   max-width: 1400px;
+  z-index: 9999;
   &__logo {
     margin-right: $base * 3;
     padding-right: $base * 3;
