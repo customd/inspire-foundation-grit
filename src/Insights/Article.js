@@ -45,9 +45,9 @@ const Article = (state) => {
                     <div className="article__name">{data.name}</div>
                     <div className="article__tags">
                       <span>Tags:</span>
-                      <span>Tag One</span>
-                      <span>Tag Two</span>
-                      <span>Tag Three</span>
+                      <span>Topic One</span>
+                      <span>Topic Two</span>
+                      <span>Topic Three</span>
                     </div>
                   </div>
                   <div className="article__share">
