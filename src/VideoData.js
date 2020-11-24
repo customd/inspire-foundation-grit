@@ -80,6 +80,15 @@ const VideoData = [
     blurb:
       "After successfully competing at the highest level of his sport Anton began to suffer a range of mysterious medical symptoms. Unable to continue competing at the highest level of competition, Anton struggled to find the cause of his ailments - A chronic fatigue diagnosis and subsequent surgical interventions finally laid a path to recovery. Anton talks us through his journey back to competition, sheds light on some of the insights that allowed him to remain focussed and demonstrates the importance of unwavering self-belief through the process.",
   },
+  {
+    name: "Richard Smith",
+    url: "richard-smith",
+    title: "Helping people get better at what they do best",
+    image: "richard-smith",
+    embed_code: "480653023",
+    blurb:
+      "Who coaches the coach you might say? Well, the answer is Richard Smith. Richard brings with him an impressive resume and track record of working with some of the most successful coaches, teams and sporting organisations around the country. Richard has a keen sense for the nuances involved in successful leadership, delivering feedback and inspiring those around you.",
+  },
 ];
 
 export default VideoData;

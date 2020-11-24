@@ -7,7 +7,7 @@ import Footer from "../Components/Footer";
 import WhyGrit from "./WhyGrit";
 import OurMission from "./OurMission";
 import Insights from "./Insights";
-import Links from "./Links";
+// import Links from "./Links";
 import Mentorship from "./Mentorship";
 
 const Home = () => {
@@ -30,7 +30,7 @@ const Home = () => {
       <WhyGrit />
       <OurMission />
       <Insights />
-      <Links />
+      {/* <Links /> */}
       <Mentorship />
       <Footer />
     </>
