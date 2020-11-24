@@ -1,4 +1,5 @@
 import React from "react";
+import ResponsiveEmbed from "react-responsive-embed";
 import { PrimaryButton } from "../Components/Buttons";
 
 const WhyGrit = () => {
@@ -10,7 +11,6 @@ const WhyGrit = () => {
             <img alt="Success Chart" src="images/success-chart.png" />
             <p>The success chart reality</p>
           </div>
-          <PrimaryButton />
         </div>
         <div>
           <div className="section__title">Why GRIT?</div>
@@ -35,6 +35,12 @@ const WhyGrit = () => {
               challenges that life can throw at us. But with a little inspired
               GRIT we can prepare our young people to become inspired.
             </p>
+          </div>
+          <div className="section__trailer">
+            <ResponsiveEmbed
+              src="https://player.vimeo.com/video/482800702?color=ffffff&byline=0&portrait=0"
+              allowFullScreen
+            />
           </div>
         </div>
       </div>

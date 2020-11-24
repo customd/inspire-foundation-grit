@@ -235,6 +235,9 @@ section {
       margin-top: $base * 4;
     }
   }
+  &__trailer {
+    margin-top: $base * 4;
+  }
   &__header {
     @include font_2;
     font-size: 36px;
