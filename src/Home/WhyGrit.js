@@ -15,18 +15,17 @@ const WhyGrit = () => {
         <div>
           <div className="section__title">Why GRIT?</div>
           <div className="section__header">
-            Strengthening the mental fortitude of our extraordinary young
-            people.
+            Strengthening the mental fortitude of our young people.
           </div>
           <div className="section__copy">
             <p>
-              Do we really understand the challenges some of our extraordinary
-              young individuals are put under today? Sure, we get the
-              ‘performing under pressure’ deal, but the fish-bowl they live in
-              now doesn’t always offer the ‘time-out’ factor that is crucial in
-              their development. Life can appear to be continually under
-              scrutiny. There is nothing worse than feeling alone in a crowded
-              room. A very dangerous, and easy mindset to fall into.
+              Do we really understand the challenges some of our young
+              individuals are put under today? Sure, we get the ‘performing
+              under pressure’ deal, but the fish-bowl they live in now doesn’t
+              always offer the ‘time-out’ factor that is crucial in their
+              development. Life can appear to be continually under scrutiny.
+              There is nothing worse than feeling alone in a crowded room. A
+              very dangerous, and easy mindset to fall into.
             </p>
             <p>
               At Inspire Foundation we know the wellbeing of our youth is
@@ -34,7 +33,7 @@ const WhyGrit = () => {
               become adversity champions. Accept that anything worth doing
               typically doesn’t come easy, and no-one is immune to the
               challenges that life can throw at us. But with a little inspired
-              GRIT we can prepare our grantees to become inspired, not expired.
+              GRIT we can prepare our young people to become inspired.
             </p>
           </div>
         </div>

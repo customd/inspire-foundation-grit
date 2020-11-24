@@ -26,10 +26,10 @@ const Insights = () => {
           <div className="section__header">Become better equiped.</div>
           <div className="section__copy">
             <p>
-              A series of inspirational videos capturing personal lessons and
-              learnings from success, failure and adversity, experienced by
-              fellow individuals. How they became better equipped to objectively
-              review the way they think, they do, they live.
+              A series of inspirational short films capturing personal lessons
+              and learnings from success, failure and adversity, experienced by
+              individuals. How they became better equipped to objectively review
+              the way they think, they do, they live.
             </p>
           </div>
         </div>

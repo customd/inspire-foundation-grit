@@ -43,12 +43,6 @@ const Article = (state) => {
                 <div className="article__row">
                   <div className="article__row">
                     <div className="article__name">{data.name}</div>
-                    <div className="article__tags">
-                      <span>Tags:</span>
-                      <span>Topic One</span>
-                      <span>Topic Two</span>
-                      <span>Topic Three</span>
-                    </div>
                   </div>
                   <div className="article__share">
                     <FacebookShareButton url="https://testing-grit.inspirefoundation.com/insights/jake-bailey">
@@ -62,15 +56,8 @@ const Article = (state) => {
                     </EmailShareButton>
                   </div>
                 </div>
-                <div className="article__description">
-                  Video Description text. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                  ea commodo consequat. Duis aute irure dolor in reprehenderit
-                  in voluptate velit esse cillum dolore eu fugiat nulla
-                  pariatur.
-                </div>
+                {console.log(data)}
+                <div className="article__description">{data.blurb}</div>
               </div>
             </div>
             <div className="article__sidebar sidebar">

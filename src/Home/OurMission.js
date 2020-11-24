@@ -16,8 +16,8 @@ const OurMission = () => {
           </div>
           <div className="section__copy">
             <p>
-              A life programme to help and assist strengthening the mental
-              fortitude of extraordinary young individuals who have the
+              A life programme that shares insights to help and assist
+              strengthening the resilience of young individuals who have the
               potential and desire to achieve excellence in their chosen field.
             </p>
             <div className="section__block">
@@ -25,7 +25,7 @@ const OurMission = () => {
               <p>
                 The mindset to manage the processing of challenges, and
                 understanding the development of setting effective, realistic
-                goals.
+                goals and a structure to achieve them.
               </p>
             </div>
             <div className="section__block">
@@ -36,19 +36,19 @@ const OurMission = () => {
               </p>
             </div>
             <div className="section__block">
-              <h4>INTENT</h4>
+              <h4>INSIGHTS</h4>
               <p>
-                To realise the purpose by putting in place strategies that
-                recognise and determine development.
+                To discover insights that influence current thinking in a way
+                that leads to positive change.
               </p>
             </div>
             <div className="section__block">
               <h4>TOGETHER</h4>
               <p>
-                Never alone. Having an impartial mentor with the capacity to
-                listen, promote considered discussion, impart knowledge and
-                leverage life experience. A mirror to the individuals’
-                aspirations in the now.
+                Never alone. Having an impartial mentor or supporter with the
+                capacity to listen, promote considered discussion, impart
+                knowledge and leverage life experience. A mirror to the
+                individuals’ aspirations in the now.
               </p>
             </div>
           </div>
