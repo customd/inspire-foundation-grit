@@ -45,9 +45,9 @@ const MainNavigation = () => {
                 <li onClick={() => setNavOpen(false)}>
                   <AnchorLink href="#insights">Insights: The Series</AnchorLink>
                 </li>
-                <li onClick={() => setNavOpen(false)}>
+                {/* <li onClick={() => setNavOpen(false)}>
                   <AnchorLink href="#links">Helpful Links</AnchorLink>
-                </li>
+                </li> */}
                 <li onClick={() => setNavOpen(false)}>
                   <AnchorLink href="#mentorship">Mentorship</AnchorLink>
                 </li>
