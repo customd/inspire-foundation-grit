@@ -28,7 +28,6 @@ const Article = (state) => {
           <meta name="description" content="Helmet application" />
         </Helmet>
         <section className="article">
-          {console.log(process.env.NODE_ENV)}
           <MainNavigation />
           <div className="container article__wrap">
             <div className="article__content">
@@ -56,7 +55,6 @@ const Article = (state) => {
                     </EmailShareButton>
                   </div>
                 </div>
-                {console.log(data)}
                 <div className="article__description">{data.blurb}</div>
               </div>
             </div>
@@ -67,6 +65,7 @@ const Article = (state) => {
                 </div>
                 {VideoData.map((d) => (
                   <Link
+                    key={d.url}
                     to={{
                       pathname: `/insights/${d.url}`,
                       state: d,
@@ -91,7 +90,6 @@ const Article = (state) => {
                     </div>
                   </Link>
                 ))}
-                {/* <SmallButton /> */}
               </div>
             </div>
           </div>

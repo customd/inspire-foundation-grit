@@ -1,6 +1,5 @@
 import React from "react";
 import ResponsiveEmbed from "react-responsive-embed";
-import { PrimaryButton } from "../Components/Buttons";
 
 const WhyGrit = () => {
   return (

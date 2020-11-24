@@ -36,6 +36,7 @@ const Insights = () => {
         <div className="resources">
           {VideoData.map((d) => (
             <Link
+              key={d.url}
               to={{
                 pathname: `/insights/${d.url}`,
                 state: d,
