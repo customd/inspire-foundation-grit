@@ -31,11 +31,11 @@ const InteractiveDesktop = () => {
         <div className="interactive__block">
           <div className="interactive__heading">
             <div className="interactive__point">
-              <span>Intent</span>
+              <span>Insights</span>
             </div>
             <div className="interactive__hover">
-              To realise the purpose by putting in place strategies that
-              recognise and determine development.
+              Discover insights that influence current thinking in a way that
+              leads to positive change.
             </div>
           </div>
         </div>

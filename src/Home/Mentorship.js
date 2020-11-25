@@ -10,7 +10,7 @@ const Mentorship = () => {
           <div className="section__header">How you can make a difference</div>
           <div className="section__copy">
             <p>
-              Be a mirror and a motivator for our youth, develop you mentoring
+              Be a mirror and a motivator for our youth, develop your mentoring
               and support skills.
             </p>
             <p>

@@ -30,11 +30,11 @@ const InteractiveMobile = () => {
       <div className="interactive-mobile__content">
         <div className="interactive-mobile__block">
           <div className="interactive-mobile__title">
-            <span className="interactive-mobile__bullet"></span>Intent
+            <span className="interactive-mobile__bullet"></span>Insights
           </div>
           <div className="interactive-mobile__hover">
-            To realise the purpose by putting in place strategies that recognise
-            and determine development.
+            Discover insights that influence current thinking in a way that
+            leads to positive change.
           </div>
         </div>
       </div>
