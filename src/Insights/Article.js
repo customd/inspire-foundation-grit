@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import FadeIn from "react-fade-in";
 import ResponsiveEmbed from "react-responsive-embed";
-import {
-  EmailShareButton,
-  FacebookShareButton,
-  TwitterShareButton,
-  FacebookIcon,
-  TwitterIcon,
-  EmailIcon,
-} from "react-share";
+// import {
+//   EmailShareButton,
+//   FacebookShareButton,
+//   TwitterShareButton,
+//   FacebookIcon,
+//   TwitterIcon,
+//   EmailIcon,
+// } from "react-share";
 import { FaPlay } from "react-icons/fa";
 import MainNavigation from "../Components/MainNavigation";
 import Footer from "../Components/Footer";
@@ -43,7 +43,7 @@ const Article = (state) => {
                   <div className="article__row">
                     <div className="article__name">{data.name}</div>
                   </div>
-                  <div className="article__share">
+                  {/* <div className="article__share">
                     <FacebookShareButton url="https://testing-grit.inspirefoundation.com/insights/jake-bailey">
                       <FacebookIcon size={40} round />
                     </FacebookShareButton>
@@ -53,7 +53,7 @@ const Article = (state) => {
                     <EmailShareButton url="https://testing-grit.inspirefoundation.com/insights/jake-bailey">
                       <EmailIcon size={40} round />
                     </EmailShareButton>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="article__description">{data.blurb}</div>
               </div>
