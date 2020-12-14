@@ -5,7 +5,10 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="container">
-        <div>© {year} Inspire Foundation</div>
+        <div>
+          © {year} Inspire Foundation. No part of this video may be reproduced
+          without permission
+        </div>
       </div>
     </div>
   );
