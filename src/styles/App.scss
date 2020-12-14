@@ -867,20 +867,23 @@ section.article {
 
 .quick-links {
   &__wrap {
+    list-style-type: disc;
     @include respond-to("medium-down") {
-      display: grid;
+      // display: grid;
       grid-gap: $gutter;
       grid-template-columns: 1fr 1fr 1fr;
+      margin-top: $base * 4;
     }
     a {
-      display: block;
+      color: #fff;
+      text-decoration: underline;
     }
   }
   &__item {
     font-size: 18px;
-    text-decoration: underline;
     color: #fff;
-    margin-bottom: $gutter;
+    margin-bottom: $base * 3;
+    line-height: 1.7;
   }
 }
 
