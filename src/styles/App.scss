@@ -142,13 +142,17 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  background-image: url("../images/hero-mobile.jpg");
   @include respond-to("medium-down") {
     background-position: center;
+    background-image: url("../images/grit-hero.jpg");
   }
   &__image {
     width: 150px;
+    display: none;
     @include respond-to("medium-down") {
       width: 400px;
+      display: block;
     }
   }
   &__background {
@@ -342,6 +346,11 @@ section {
 }
 
 .why-grit {
+  padding-top: $base * 2 !important;
+  &__wrap {
+    border-top: 1px solid #ddd;
+    padding-top: 80px;
+  }
   &__graph {
     p {
       text-align: center;
@@ -653,6 +662,29 @@ section.article {
         font-weight: 600;
         padding: 0;
       }
+    }
+  }
+}
+
+.patron-message {
+  &__wrap {
+    width: 100%;
+    @include respond-to("medium-down") {
+      width: 60%;
+    }
+  }
+  &__title {
+    font-family: lust, serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 26px;
+    line-height: 1.25;
+    margin-bottom: $base * 4;
+    @include respond-to("medium-down") {
+      font-size: 36px;
+    }
+    span {
+      color: $red;
     }
   }
 }

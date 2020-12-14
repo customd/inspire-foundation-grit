@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 import Hero from "./Hero";
+import PatronMessage from "./PatronMessage";
 import Navigation from "../Components/Navigation";
 import MainNavigation from "../Components/MainNavigation";
 import Footer from "../Components/Footer";
@@ -27,6 +28,7 @@ const Home = () => {
       </div>
       <Navigation />
       <Hero />
+      <PatronMessage />
       <WhyGrit />
       <OurMission />
       <Insights />

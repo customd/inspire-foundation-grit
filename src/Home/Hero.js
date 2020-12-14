@@ -24,7 +24,7 @@ function LazyBackground({ src }) {
 const Hero = () => {
   return (
     <>
-      <LazyBackground src={"../images/grit-hero.jpg"} />
+      <LazyBackground />
 
       <FadeIn>
         <section className="hero">
