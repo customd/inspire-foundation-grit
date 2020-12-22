@@ -772,15 +772,18 @@ section.article {
   }
   &__header {
     margin-bottom: $base * 5;
-
     @include respond-to("medium-down") {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      display: flex;
+      justify-content: center;
     }
+  }
+  &__logo_wrap {
+    width: 470px;
   }
   &__subheader {
     display: flex;
     align-items: flex-start;
+    margin-bottom: $base * 10;
   }
   &__play {
     width: 100px;
@@ -796,11 +799,11 @@ section.article {
     img {
       max-width: 187px;
       @include respond-to("medium-down") {
-        max-width: 250px;
+        max-width: 300px;
       }
     }
     @include respond-to("medium-down") {
-      width: 250px;
+      width: 350px;
       display: flex;
       margin-bottom: 0;
     }
@@ -816,7 +819,7 @@ section.article {
       border-left: 3px solid $red;
       position: relative;
       @include respond-to("medium-down") {
-        font-size: 32px;
+        font-size: 40px;
       }
       &:before {
         content: "";

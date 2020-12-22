@@ -35,6 +35,11 @@ const Navigation = () => {
                   <AnchorLink href="#why-grit">Why GRIT</AnchorLink>
                 </li>
                 <li onClick={() => setNavOpen(false)}>
+                  <AnchorLink href="#patron-message">
+                    A Message From Our Patron - Rob Waddell
+                  </AnchorLink>
+                </li>
+                <li onClick={() => setNavOpen(false)}>
                   <AnchorLink href="#our-mission">Our Mission</AnchorLink>
                 </li>
                 <li onClick={() => setNavOpen(false)}>

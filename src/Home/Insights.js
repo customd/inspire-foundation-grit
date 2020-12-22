@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { MdPlayCircleOutline } from "react-icons/md";
 import VideoTile from "../Components/VideoTile";
 import VideoData from "../VideoData";
 
@@ -12,17 +11,16 @@ const Insights = () => {
           <div className="insights__logo_wrap">
             <div className="insights__logo">
               <img alt="Insights Logo" src="../images/insights-logo.png" />
-              <div className="insights__">
+              <div>
                 <span>The Series</span>
               </div>
             </div>
           </div>
-          <div className="insights__subheader">
-            <MdPlayCircleOutline size={80} color={"#bbb"} />
-            <div className="section__title">RESOURCES TO INSPIRE</div>
-          </div>
         </div>
         <div>
+          {/* <div className="insights__subheader">
+            <div className="section__title">RESOURCES TO INSPIRE</div>
+          </div> */}
           <div className="section__header">Become better equiped.</div>
           <div className="section__copy">
             <p>
