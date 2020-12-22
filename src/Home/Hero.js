@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import FadeIn from "react-fade-in";
 import InteractiveMobile from "../Components/InteractiveMobile";
 import InteractiveDesktop from "../Components/InteractiveDesktop";
+import { IoIosArrowDown } from "react-icons/io";
 
 function LazyBackground({ src }) {
   const [source, setSource] = useState("preload.jpg");
@@ -35,6 +36,14 @@ const Hero = () => {
               </div>
               <InteractiveMobile />
               <InteractiveDesktop />
+            </div>
+          </div>
+          <div className="scroll-icon">
+            <div className="button_block">
+              <button className="button">
+                FIND <span>a better</span> YOU
+              </button>
+              <IoIosArrowDown size={60} color="#fff" />
             </div>
           </div>
         </section>

@@ -418,18 +418,14 @@ section {
 .button_block {
   button {
     background: none;
-    border-top: solid 3px $red;
-    border-bottom: solid 3px $red;
-    border-left: 0;
-    border-right: 0;
+    border: none;
     box-shadow: none;
     outline: none;
     font-weight: 800;
     font-size: 16px;
     @include font_3;
-    color: #3f3f3f;
+    color: #fff;
     letter-spacing: 2.5px;
-    padding: $base * 3 $gutter * 4;
     width: 100%;
     @include respond-to("medium-down") {
       font-size: 18px;
@@ -754,12 +750,31 @@ section.article {
   }
 }
 
+.scroll-icon {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  bottom: -50px;
+  transform: translate(-50%, -50%);
+  margin-bottom: $base * 5;
+  .button_block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .insights {
   &__logo_wrap {
+    width: 300px;
     @include respond-to("medium-down") {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      width: 558px;
     }
   }
   svg {
@@ -776,9 +791,6 @@ section.article {
       display: flex;
       justify-content: center;
     }
-  }
-  &__logo_wrap {
-    width: 558px;
   }
   &__subheader {
     display: flex;
