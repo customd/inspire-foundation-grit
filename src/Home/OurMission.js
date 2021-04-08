@@ -16,36 +16,36 @@ const OurMission = () => {
           </div>
           <div className="section__copy">
             <p>
-              A life programme that shares insights to help and assist
-              strengthening the resilience of young individuals who have the
-              potential and desire to achieve excellence in their chosen field.
+              A well-being programme that shares insights to help and assist
+              young individuals to build their self-belief, their resilience and
+              to achieve excellence in their chosen field.
             </p>
             <div className="section__block">
               <h4>GOALS</h4>
               <p>
-                The mindset to manage the processing of challenges, and
-                understanding the development of setting effective, realistic
-                goals and a structure to achieve them.
+                Establishing a direction for your life, a clear view of the
+                future and results you want in your chosen timeframe.
               </p>
             </div>
             <div className="section__block">
               <h4>RESILIENCE</h4>
               <p>
-                The ability to recognise, understand and strengthen well-being,
-                during adversity.
+                The ability to adapt well in the face of adversity, to know your
+                strengths to bounce back from difficult life events and work
+                through the challenges of emotional upheaval and hardship.
               </p>
             </div>
             <div className="section__block">
               <h4>INSIGHTS</h4>
               <p>
-                To discover insights that influence current thinking in a way
-                that leads to positive change.
+                To discover a deeper understanding that will influence our
+                current thinking in a way that leads to positive change.
               </p>
             </div>
             <div className="section__block">
               <h4>TOGETHER</h4>
               <p>
-                Never alone. Having an impartial mentor or supporter with the
+                Mutual support. Having an impartial mentor or supporter with the
                 capacity to listen, promote considered discussion, impart
                 knowledge and leverage life experience. A mirror to the
                 individuals’ aspirations in the now.

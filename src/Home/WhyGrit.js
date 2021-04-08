@@ -14,25 +14,27 @@ const WhyGrit = () => {
         <div>
           <div className="section__title">Why GRIT?</div>
           <div className="section__header">
-            Strengthening the mental fortitude of our young people.
+            Developing the confidence, self-belief and mental fortitude of our
+            young people.
           </div>
           <div className="section__copy">
             <p>
-              Do we really understand the challenges some of our young
-              individuals are put under today? Sure, we get the ‘performing
-              under pressure’ deal, but the fish-bowl they live in now doesn’t
-              always offer the ‘time-out’ factor that is crucial in their
-              development. Life can appear to be continually under scrutiny.
-              There is nothing worse than feeling alone in a crowded room. A
-              very dangerous, and easy mindset to fall into.
+              We do know the challenges some of our young individuals are facing
+              today? Sure, we get the ‘performing under pressure’ deal, but the
+              fish-bowl they live in now doesn’t always offer the ‘time-out’
+              factor that is crucial in their development. Life can appear to be
+              continually under scrutiny.
             </p>
             <p>
-              At Inspire Foundation we know the wellbeing of our youth is
-              paramount for them to realise their potential. We want them to
-              become adversity champions. Accept that anything worth doing
-              typically doesn’t come easy, and no-one is immune to the
-              challenges that life can throw at us. But with a little inspired
-              GRIT we can prepare our young people to become inspired.
+              At the Inspire Foundation we know the wellbeing of our youth is a
+              key for them to realise their potential. We want them to become
+              adversity champions. Accepting that anything worth doing typically
+              doesn’t come easy, and no-one is immune to the challenges that
+              life can throw.
+            </p>
+            <p>
+              Reflecting on a GRIT insight, developing commitment and taking
+              action can help our young people to perform to their potential.
             </p>
           </div>
           <div className="section__trailer">
