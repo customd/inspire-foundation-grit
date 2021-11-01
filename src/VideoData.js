@@ -89,6 +89,51 @@ const VideoData = [
     blurb:
       "Who coaches the coach you might say? Well, the answer is Richard Smith. Richard brings with him an impressive resume and track record of working with some of the most successful coaches, teams and sporting organisations around the country. Richard has a keen sense for the nuances involved in successful leadership, delivering feedback and inspiring those around you.",
   },
+  {
+    name: "Henare Kaa",
+    url: "henare-kaa",
+    title: "Harnessing ADHD with music",
+    image: "henare-kaa",
+    embed_code: "589712097",
+    blurb:
+      "Henare Kaa, a self proclaimed 'Māori Musician riddled with ADHD', is passionate about sharing his experiences with ADHD. Through Music, Henare learnt to focus and channel his attention in new ways and now flourishes as a successful multi instrumentalist. Henare shares his story beginning from his diagnosis, how he manages his ADHD on a day-to-day basis and shares valuable insights for others looking to harness ADHD to its full potential.",
+  },
+  {
+    name: "Erikana Pederson",
+    url: "erikana-pederson",
+    title: "Mental and physical recovery from injury",
+    image: "erikana-pederson",
+    embed_code: "589763899",
+    blurb:
+      "After her 2018 debut with the Silver Ferns, Erikana suffered a shock ACL rupture 4 minutes into her 2019 season with the Tactix. Erikana charts her rehabilitation journey from dealing with the initial grief and subsequent onset of depression to how she developed an array of mental skills that supported her recovery.",
+  },
+  {
+    name: "Jamie Roberts",
+    url: "jamie-roberts",
+    title: "Creating champions for life",
+    image: "jamie-roberts",
+    embed_code: "590949372",
+    blurb:
+      "Jamie Roberts runs the A-Town boxing gym in Aranui, a grassroots organisation that provides a safe space for people to train, develop and flourish under his guidance. He's both a boxing coach and mentor for the youth that frequent the gym. Jamie also runs the local Champions for Life programme in schools, where he encourages kids to become champions in all areas of life, beginning from making the bed at home in the morning to competing in the ring. Jamie shares his insights on what boxing can teach us and how he's learnt to become a mentor.",
+  },
+  {
+    name: "Sean Thomas",
+    url: "sean-thomas",
+    title: "Applying learning from business to youth mentorship",
+    image: "sean-thomas",
+    embed_code: "556937529",
+    blurb:
+      "Sean has a keen interest in mentoring youth and has worked with the Big Brothers, Big Sisters programme in Nelson for nearly 20 years and has run the KSI Karate club. Sean shares a lifetime of learnings, wisdom and insights on the topics of leadership, personal development and mentorship. On his business side Sean’s interest included  leadership development, team development and the application of human-social factors, Sean also shares insights that have assisted companies to improve their efficiency and effectiveness for over 30 years.",
+  },
+  {
+    name: "Josh Tonga",
+    url: "josh-tonga",
+    title: "What boxing can teach",
+    image: "josh-tonga",
+    embed_code: "596167898",
+    blurb:
+      "Despite his age, Josh Tonga has a lost list of accomplishments under his belt having recently won a national boxing title for his age group. With a goal to represent New Zealand at the Olympics he's dedicated to being the best version of himself, both from a physical and mental perspective. In this interview Josh gives us an insight into some of the tips and techniques he employs in his training, why having a mentor is critical to his success and why losing a match can be a good thing.",
+  },
 ];
 
 export default VideoData;
