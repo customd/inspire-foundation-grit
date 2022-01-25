@@ -33,7 +33,9 @@ const Article = (state) => {
             <div className="article__content">
               <div className="">
                 <ResponsiveEmbed
-                  src={`https://player.vimeo.com/video/${data.embed_code}?color=ffffff&byline=0&portrait=0`}
+                  src={`https://player.vimeo.com/video/${data.embed_code}${
+                    data.embed_code.includes("?") ? "&" : "?"
+                  }color=ffffff&byline=0&portrait=0`}
                   allowFullScreen
                 />
               </div>

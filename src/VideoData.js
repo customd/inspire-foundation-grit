@@ -134,6 +134,23 @@ const VideoData = [
     blurb:
       "Despite his age, Josh Tonga has a lost list of accomplishments under his belt having recently won a national boxing title for his age group. With a goal to represent New Zealand at the Olympics he's dedicated to being the best version of himself, both from a physical and mental perspective. In this interview Josh gives us an insight into some of the tips and techniques he employs in his training, why having a mentor is critical to his success and why losing a match can be a good thing.",
   },
+  {
+    name: "Theo Feldbrugge",
+    url: "theo-feldbrugge",
+    title: "Training for mental fitness",
+    image: "theo-feldbrugge",
+    embed_code: "665401428?h=33f30dd560",
+    blurb: "",
+  },
+  {
+    name: "Sarah Burrows",
+    url: "sarah-burrows",
+    title:
+      "Advice on rehabilitation and how injuries can be a blessing in disguise",
+    image: "sarah-burrows",
+    embed_code: "665413739?h=503d0b8b36",
+    blurb: "",
+  },
 ];
 
 export default VideoData;
