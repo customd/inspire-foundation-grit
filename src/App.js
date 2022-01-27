@@ -13,7 +13,7 @@ function App() {
         <div>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/insights" component={Article} />
+            <Route path="/insights/:slug" component={Article} />
           </Switch>
         </div>
       </ScrollToTop>

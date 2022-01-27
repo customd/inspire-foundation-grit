@@ -17,13 +17,16 @@ import Footer from "../Components/Footer";
 import VideoData from "../VideoData";
 
 const Article = (state) => {
-  const data = state.location.state;
+  const data = VideoData.filter(
+    (object) => object.url === state.match.params.slug
+  );
+  const { name, title, embed_code, blurb } = data[0];
   return (
     <div>
       <FadeIn>
         <Helmet>
           <title>
-            {data.name} - {data.title} - GRIT
+            {name} - {title} - GRIT
           </title>
           <meta name="description" content="Helmet application" />
         </Helmet>
@@ -33,15 +36,15 @@ const Article = (state) => {
             <div className="article__content">
               <div className="">
                 <ResponsiveEmbed
-                  src={`https://player.vimeo.com/video/${data.embed_code}?color=ffffff&byline=0&portrait=0`}
+                  src={`https://player.vimeo.com/video/${embed_code}?color=ffffff&byline=0&portrait=0`}
                   allowFullScreen
                 />
               </div>
               <div className="article__block">
-                <div className="article__title">{data.title}</div>
+                <div className="article__title">{title}</div>
                 <div className="article__row">
                   <div className="article__row">
-                    <div className="article__name">{data.name}</div>
+                    <div className="article__name">{name}</div>
                   </div>
                   {/* <div className="article__share">
                     <FacebookShareButton url="https://testing-grit.inspirefoundation.com/insights/jake-bailey">
@@ -55,7 +58,7 @@ const Article = (state) => {
                     </EmailShareButton>
                   </div> */}
                 </div>
-                <div className="article__description">{data.blurb}</div>
+                <div className="article__description">{blurb}</div>
               </div>
             </div>
             <div className="article__sidebar sidebar">
