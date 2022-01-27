@@ -134,6 +134,25 @@ const VideoData = [
     blurb:
       "Despite his age, Josh Tonga has a lost list of accomplishments under his belt having recently won a national boxing title for his age group. With a goal to represent New Zealand at the Olympics he's dedicated to being the best version of himself, both from a physical and mental perspective. In this interview Josh gives us an insight into some of the tips and techniques he employs in his training, why having a mentor is critical to his success and why losing a match can be a good thing.",
   },
+  {
+    name: "Theo Feldbrugge",
+    url: "theo-feldbrugge",
+    title: "Training for mental fitness",
+    image: "theo-feldbrugge",
+    embed_code: "665401428?h=33f30dd560",
+    blurb:
+      'Theo Feldbrugge was told it was "very unlikely" he would ever walk again after breaking his neck in a cycling accident. Three years later he was back on his bike. His background in personal development and mental fitness laid the foundation for his recovery and gave him the chance to practice what he preached. In this video, Theo draws on a range of ideas from his mental tool-kit including the importance of adopting a position of hope, his ABCDE model for facing adversity and how we can all better train for mental fitness.',
+  },
+  {
+    name: "Sarah Burrows",
+    url: "sarah-burrows",
+    title:
+      "Advice on rehabilitation and how injuries can be a blessing in disguise",
+    image: "sarah-burrows",
+    embed_code: "665413739?h=503d0b8b36",
+    blurb:
+      "After suffering a series of injuries and physical ailments while training as a ballet dancer, Sarah became increasingly disillusioned with an unsupportive approach to rehabilitation. Sarah was drawn to Pilates as a methodology for rehabilitation and now runs her own studio where she mentors and supports others through their rehabilitation journey. In this video, Sarah discusses the relationship between performance and identity, gives practical advice on injury prevention and explains why experiencing an injury can ultimately be a blessing in disguise.",
+  },
 ];
 
 export default VideoData;
