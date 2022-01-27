@@ -24,7 +24,7 @@ const Home = () => {
   return (
     <>
       <div className={`nav-container ${hideOnScroll ? "hide" : "show"}`}>
-        <MainNavigation />
+        <MainNavigation isHomePage />
       </div>
       <Navigation />
       <Hero />

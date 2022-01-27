@@ -1,9 +1,28 @@
 import React, { useState, Fragment } from "react";
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { MdMenu, MdClose } from "react-icons/md";
+import { HashLink } from "react-router-hash-link";
 
-const MainNavigation = () => {
+const Anchor = ({ samePage, href, children }) =>
+  samePage ? (
+    <AnchorLink href={href}>{children}</AnchorLink>
+  ) : (
+    <HashLink to={`/${href}`}>{children}</HashLink>
+  );
+
+Anchor.propTypes = {
+  samePage: PropTypes.bool,
+  children: PropTypes.node.isRequired,
+  href: PropTypes.string.isRequired,
+};
+
+Anchor.defaultProps = {
+  samePage: false,
+};
+
+const MainNavigation = ({ isHomePage }) => {
   const [isNavOpen, setNavOpen] = useState(false);
   return (
     <Fragment>
@@ -37,24 +56,32 @@ const MainNavigation = () => {
             <div className="nav-content">
               <ul>
                 <li onClick={() => setNavOpen(false)}>
-                  <AnchorLink href="#why-grit">Why GRIT</AnchorLink>
+                  <Anchor href="#why-grit" samePage={isHomePage}>
+                    Why GRIT
+                  </Anchor>
                 </li>
                 <li onClick={() => setNavOpen(false)}>
-                  <AnchorLink href="#patron-message">
+                  <Anchor href="#patron-message" samePage={isHomePage}>
                     A Message From Our Patron - Rob Waddell
-                  </AnchorLink>
+                  </Anchor>
                 </li>
                 <li onClick={() => setNavOpen(false)}>
-                  <AnchorLink href="#our-mission">Our Mission</AnchorLink>
+                  <Anchor href="#our-mission" samePage={isHomePage}>
+                    Our Mission
+                  </Anchor>
                 </li>
                 <li onClick={() => setNavOpen(false)}>
-                  <AnchorLink href="#insights">Insights: The Series</AnchorLink>
+                  <Anchor href="#insights" samePage={isHomePage}>
+                    Insights: The Series
+                  </Anchor>
                 </li>
                 {/* <li onClick={() => setNavOpen(false)}>
                   <AnchorLink href="#links">Helpful Links</AnchorLink>
                 </li> */}
                 <li onClick={() => setNavOpen(false)}>
-                  <AnchorLink href="#mentorship">Mentorship</AnchorLink>
+                  <Anchor href="#mentorship" samePage={isHomePage}>
+                    Mentorship
+                  </Anchor>
                 </li>
               </ul>
             </div>
@@ -63,6 +90,14 @@ const MainNavigation = () => {
       )}
     </Fragment>
   );
+};
+
+MainNavigation.propTypes = {
+  isHomePage: PropTypes.bool,
+};
+
+MainNavigation.defaultProps = {
+  isHomePage: false,
 };
 
 export default MainNavigation;
