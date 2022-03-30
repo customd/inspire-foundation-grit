@@ -153,6 +153,14 @@ const VideoData = [
     blurb:
       "After suffering a series of injuries and physical ailments while training as a ballet dancer, Sarah became increasingly disillusioned with an unsupportive approach to rehabilitation. Sarah was drawn to Pilates as a methodology for rehabilitation and now runs her own studio where she mentors and supports others through their rehabilitation journey. In this video, Sarah discusses the relationship between performance and identity, gives practical advice on injury prevention and explains why experiencing an injury can ultimately be a blessing in disguise.",
   },
+  {
+    name: "Sir John Kirwan",
+    url: "sir-john-kirwan",
+    title: "All Black Legend and Mental Health Advocate",
+    image: "sir-john-kirwan",
+    embed_code: "684905554?h=aa1c95d402",
+    blurb: "",
+  },
 ];
 
 export default VideoData;
