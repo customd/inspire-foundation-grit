@@ -159,7 +159,8 @@ const VideoData = [
     title: "All Black Legend and Mental Health Advocate",
     image: "sir-john-kirwan",
     embed_code: "684905554?h=aa1c95d402",
-    blurb: "",
+    blurb:
+      "John Kirwan has been at the forefront of mental health awareness in New Zealand for 15 years. After battling depression and anxiety all his life, John is now focussed on providing young people with the skills and knowledge to recognise and respond to mental health issues both in themselves and others. In this Insights episode, John covers a range of key strategies he uses to continue mastering his own mental health, including how to accept mental issues as an illness and not a weakness, how to formulate a daily mental health plan and how to tame his monkey brain.",
   },
 ];
 
