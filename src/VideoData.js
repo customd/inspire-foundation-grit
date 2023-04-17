@@ -162,6 +162,33 @@ const VideoData = [
     blurb:
       "John Kirwan has been at the forefront of mental health awareness in New Zealand for 15 years. After battling depression and anxiety all his life, John is now focussed on providing young people with the skills and knowledge to recognise and respond to mental health issues both in themselves and others. In this Insights episode, John covers a range of key strategies he uses to continue mastering his own mental health, including how to accept mental issues as an illness and not a weakness, how to formulate a daily mental health plan and how to tame his monkey brain.",
   },
+  {
+    name: "Abbas Nazari",
+    url: "abbas-nazari",
+    title: "Maintaining perspective in the face of adversity",
+    image: "abbas-nazari",
+    embed_code: "722065842?h=e02f1758e9",
+    blurb:
+      "",
+  },
+  {
+    name: "Ish Sodhi",
+    url: "ish-sodhi",
+    title: "Professional Cricket Player & Black Cap",
+    image: "ish-sodhi",
+    embed_code: "714292165?h=d3591d0398",
+    blurb:
+      "",
+  },
+  {
+    name: "Josh Komen",
+    url: "josh-komen",
+    title: "The transformational power of cold immersion",
+    image: "josh-komen",
+    embed_code: "760734088?h=aca59e6c85",
+    blurb:
+      "",
+  },
 ];
 
 export default VideoData;
