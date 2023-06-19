@@ -189,6 +189,15 @@ const VideoData = [
     blurb:
       "",
   },
+  {
+    name: "Nathan Wallis",
+    url: "nathan-wallis",
+    title: "How to understand the adolescent brain",
+    image: "nathan-wallis",
+    embed_code: "820706611",
+    blurb:
+      "",
+  },
 ];
 
 export default VideoData;
